@@ -1,8 +1,6 @@
-
+theme: jekyll-theme-midnight
 site_description: Chartiful - Modern JavaScript SVG Charts.
 root_domain: chartiful.io
-theme: jekyll-theme-midnight
-
 plugins:
   - jekyll-relative-links
 relative_links:
