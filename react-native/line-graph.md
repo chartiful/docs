@@ -22,24 +22,40 @@ npm i @chartiful/react-native-chart-builder @chartiful/react-native-line-graph
 ### Example
 
 ```jsx
-import LineGraph from '@chartiful/react-native-line-graph'
+import LineGraph from '@chartiful/react-native-line-graph';
+import { StyleSheet } from 'react-native';
 
 const config = {
   startAtZero: false,
-  hasXAxisBackgroundLines: false
-}
+  hasXAxisBackgroundLines: false,
+  xAxisLabelStyle: {
+    prefix: '$',
+    offset: 0
+  }
+};
 
-<LineGraph
-  data={[10, 15, 7, 20, 14, 12, 10, 20]}
-  width={375}
-  height={300}
-  isBezier
-  hasShadow
-  baseConfig={config}
-  style={{
-    marginTop: 30
-  }}
-/>
+export const YourComponent = () => (
+  <LineGraph
+    data={[10, 15, 7, 20, 14, 12, 10, 20]}
+    width={375}
+    height={300}
+    isBezier
+    hasShadow
+    baseConfig={config}
+    style={styles.chart}
+  />
+);
+
+const styles = StyleSheet.create({
+  chart: {
+    marginBottom: 30,
+    padding: 10,
+    paddingTop: 20,
+    borderRadius: 20,
+    width: 375,
+    backgroundColor: 'lightblue'
+  }
+});
 ```
 
 ### Interface
