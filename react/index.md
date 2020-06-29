@@ -1,4 +1,11 @@
-# React
+---
+layout: default
+title: React (Web)
+nav_order: 4
+has_children: true
+---
+
+# React (Web)
 
 A chart library for React . Currently there is support for vertical bar graphs, horizontal bar graphs, and line graphs, with support coming for scatter plots, pie charts, progress rings, and heat maps.
 
