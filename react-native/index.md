@@ -148,6 +148,15 @@ npm i @chartiful/react-native-chart-builder @chartiful/react-native-line-graph
 ```jsx
 import LineGraph from '@chartiful/react-native-line-graph'
 
+const config = {
+  startAtZero: false,
+  hasXAxisBackgroundLines: false,
+  xAxisLabelStyle: {
+    prefix: '$',
+    offset: 0
+  }
+}
+
 <LineGraph
   data={[10, 15, 7, 20, 14, 12, 10, 20]}
   width={Dimensions.get('window').width - 90}
@@ -157,14 +166,7 @@ import LineGraph from '@chartiful/react-native-line-graph'
   lineWidth={3}
   isBezier
   hasDots={true}
-  baseConfig={{
-    startAtZero: false,
-    hasXAxisBackgroundLines: false,
-    xAxisLabelStyle: {
-      prefix: '$',
-      offset: 0
-    }
-  }}
+  baseConfig={config}
   style={{
     marginBottom: 30,
     padding: 10,
