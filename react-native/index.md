@@ -5,7 +5,7 @@ A chart library for React Native. Currently there is support for vertical bar gr
 **[NPM packages](https://www.npmjs.com/org/chartiful)**
 
 <p align="center">
-  <img src="https://seanwatters.io/images/@chartiful-react-native-overview.png" width="500px" alt="bar graph image">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-overview.png" width="550px" alt="bar graph image">
 </p>
 
 ## BaseChartConfig
