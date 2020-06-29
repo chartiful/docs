@@ -42,9 +42,7 @@ export const YourComponent = () => (
     barRadius={5}
     barWidthPercentage={0.65}
     baseConfig={config}
-    style={{
-      paddingVertical: 10
-    }}
+    style={styles.chart}
   />
 );
 
