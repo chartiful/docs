@@ -1,6 +1,6 @@
 ---
 layout: default
-title: React Native
+title: Svelte
 nav_order: 2
 has_children: true
 ---
