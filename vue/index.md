@@ -1,3 +1,10 @@
-# Vue
+---
+layout: default
+title: Vue.js
+nav_order: 4
+has_children: true
+---
 
-Documentation currently work in progress... Package was just recently released. 
+# Vue.js
+
+Documentation currently work in progress... Package was just recently released.
