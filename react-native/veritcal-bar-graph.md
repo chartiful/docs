@@ -23,7 +23,7 @@ npm i @chartiful/react-native-chart-builder @chartiful/react-native-vertical-bar
 
 ```jsx
 import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph';
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 const config = {
   hasXAxisBackgroundLines: false,
@@ -34,16 +34,18 @@ const config = {
 };
 
 export const YourComponent = () => (
-  <VerticalBarGraph
-    data={[20, 45, 28, 80, 99, 43, 50]}
-    labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}
-    width={375}
-    height={300}
-    barRadius={5}
-    barWidthPercentage={0.65}
-    baseConfig={config}
-    style={styles.chart}
-  />
+  <View>
+    <VerticalBarGraph
+      data={[20, 45, 28, 80, 99, 43, 50]}
+      labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}
+      width={375}
+      height={300}
+      barRadius={5}
+      barWidthPercentage={0.65}
+      baseConfig={config}
+      style={styles.chart}
+    />
+  </View>
 );
 
 const styles = StyleSheet.create({

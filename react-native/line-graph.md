@@ -23,7 +23,7 @@ npm i @chartiful/react-native-chart-builder @chartiful/react-native-line-graph
 
 ```jsx
 import LineGraph from '@chartiful/react-native-line-graph';
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 const config = {
   startAtZero: false,
@@ -35,15 +35,17 @@ const config = {
 };
 
 export const YourComponent = () => (
-  <LineGraph
-    data={[10, 15, 7, 20, 14, 12, 10, 20]}
-    width={375}
-    height={300}
-    isBezier
-    hasShadow
-    baseConfig={config}
-    style={styles.chart}
-  />
+  <View>
+    <LineGraph
+      data={[10, 15, 7, 20, 14, 12, 10, 20]}
+      width={375}
+      height={300}
+      isBezier
+      hasShadow
+      baseConfig={config}
+      style={styles.chart}
+    />
+  </View>
 );
 
 const styles = StyleSheet.create({

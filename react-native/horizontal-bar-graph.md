@@ -23,7 +23,7 @@ npm i @chartiful/react-native-chart-builder @chartiful/react-native-horizontal-b
 
 ```jsx
 import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph';
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 const config = {
   hasYAxisBackgroundLines: false,
@@ -46,15 +46,17 @@ const config = {
 };
 
 export const YourComponent = () => (
-  <HorizontalBarGraph
-    data={[125, 100, 50, 75, 100, 125]}
-    labels={['Q1, 2019', 'Q2, 2019', 'Q3, 2019', 'Q4, 2019', 'Q1, 2020', 'Q2, 2020']}
-    width={375}
-    height={350}
-    barRadius={15}
-    baseConfig={config}
-    style={styles.chart}
-  />
+  <View>
+    <HorizontalBarGraph
+      data={[125, 100, 50, 75, 100, 125]}
+      labels={['Q1, 2019', 'Q2, 2019', 'Q3, 2019', 'Q4, 2019', 'Q1, 2020', 'Q2, 2020']}
+      width={375}
+      height={350}
+      barRadius={15}
+      baseConfig={config}
+      style={styles.chart}
+    />
+  </View>
 );
 
 const styles = StyleSheet.create({
