@@ -64,7 +64,9 @@ A chart library for React . Currently there is support for vertical bar graphs, 
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-vertical-bar-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" height="275px" alt="bar graph image">
+<p align="center">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" width="400px" alt="bar graph image">
+</p>
 
 ### Installation
 
@@ -131,7 +133,9 @@ const config = {
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-line-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-line-graph.png" height="275px" alt="bar graph image">
+<p align="center">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-line-graph.png" width="400px" alt="bar graph image">
+</p>
 
 ### Installation
 
@@ -210,7 +214,9 @@ const config = {
 
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-horizontal-bar-graph)**
 
-<img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" height="275px" alt="bar graph image">
+<p align="center">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-horizontal-bar-graph.png" width="400px" alt="bar graph image">
+</p>
 
 ### Installation
 
