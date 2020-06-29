@@ -81,6 +81,14 @@ npm i @chartiful/react-native-chart-builder @chartiful/react-native-vertical-bar
 ```jsx
 import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph'
 
+const config = {
+  hasXAxisBackgroundLines: false,
+  xAxisLabelStyle: {
+    position: 'right',
+    prefix: '$'
+  }
+}
+
 <VerticalBarGraph
   data={[20, 45, 28, 80, 99, 43, 50]}
   labels={['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']}
@@ -89,13 +97,7 @@ import VerticalBarGraph from '@chartiful/react-native-vertical-bar-graph'
   barRadius={5}
   barWidthPercentage={0.65}
   barColor='#53ae31'
-  baseConfig={{
-    hasXAxisBackgroundLines: false,
-    xAxisLabelStyle: {
-      position: 'right',
-      prefix: '$'
-    }
-  }}
+  baseConfig={config}
   style={{
     marginBottom: 30,
     padding: 10,
