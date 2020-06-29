@@ -227,6 +227,27 @@ npm i @chartiful/react-native-chart-builder @chartiful/react-native-horizontal-b
 ```jsx
 import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph'
 
+const config = {
+  hasYAxisBackgroundLines: false,
+  xAxisLabelStyle: {
+    rotation: 0,
+    fontSize: 11,
+    width: 60,
+    yOffset: 4,
+    xOffset: -12
+  },
+  yAxisLabelStyle: {
+    rotation: 30,
+    fontSize: 13,
+    prefix: '$',
+    position: 'bottom',
+    xOffset: 15,
+    yOffset: -10,
+    decimals: 2,
+    height: 50
+  }
+}
+
 <HorizontalBarGraph
   data={[125, 100, 50, 75, 100, 125]}
   labels={['Q1, 2019', 'Q2, 2019', 'Q3, 2019', 'Q4, 2019', 'Q1, 2020', 'Q2, 2020']}
@@ -234,26 +255,7 @@ import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph'
   height={225}
   barRadius={7}
   barColor='#82d551'
-  baseConfig={{
-    hasYAxisBackgroundLines: false,
-    xAxisLabelStyle: {
-      rotation: 0,
-      fontSize: 11,
-      width: 60,
-      yOffset: 4,
-      xOffset: -12
-    },
-    yAxisLabelStyle: {
-      rotation: 30,
-      fontSize: 13,
-      prefix: '$',
-      position: 'bottom',
-      xOffset: 15,
-      yOffset: -10,
-      decimals: 2,
-      height: 50
-    }
-  }}
+  baseConfig={config}
   style={{
     marginBottom: 30,
     padding: 10,
