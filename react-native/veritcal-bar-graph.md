@@ -10,7 +10,7 @@ parent: React Native
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-native-vertical-bar-graph)**
 
 <p align="left">
-  <img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" width="550px" alt="bar graph image">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-vertical-bar-graph.png" width="400px" alt="bar graph image">
 </p>
 
 ### Installation
