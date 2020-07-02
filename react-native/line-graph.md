@@ -10,7 +10,7 @@ parent: React Native
 **[NPM package](https://www.npmjs.com/package/@chartiful/react-native-line-graph)**
 
 <p align="left">
-  <img src="https://seanwatters.io/images/@chartiful-react-native-line-graph.png" width="550px" alt="line graph image">
+  <img src="https://seanwatters.io/images/@chartiful-react-native-line-graph.png" width="400px" alt="line graph image">
 </p>
 
 ### Installation
